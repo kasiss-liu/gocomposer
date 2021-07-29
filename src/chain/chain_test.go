@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/kasiss-liu/fncomposer/src/caller"
+	"github.com/kasiss-liu/gocomposer/src/caller"
 )
 
 func TestChainRun(t *testing.T) {

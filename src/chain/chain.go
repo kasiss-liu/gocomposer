@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/kasiss-liu/fncomposer/src/caller"
+	"github.com/kasiss-liu/gocomposer/src/caller"
 )
 
 type ChainContext struct {
