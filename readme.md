@@ -1,13 +1,7 @@
-package chain
+### 一个控制协程调用链的容器
 
-import (
-	"context"
-	"testing"
-
-	"github.com/kasiss-liu/fncomposer/src/caller"
-)
-
-func TestChainRun(t *testing.T) {
+demo:
+```go
 	ch := NewFnChain(5)
 	c5 := caller.NewCaller(func(c context.Context) { println(5); <-c.Done() }, 5)
 	ch.Append(c5)
@@ -21,4 +15,12 @@ func TestChainRun(t *testing.T) {
 	ch.Append(c1)
 
 	ch.Run()
-}
+```
+result:
+```shell
+1
+2
+3
+4
+5
+```

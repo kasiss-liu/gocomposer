@@ -1,4 +1,4 @@
-module github.com/kasiss/fncomposer
+module github.com/kasiss-liu/fncomposer
 
 go 1.15
 
